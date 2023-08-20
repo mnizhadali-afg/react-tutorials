@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+}
+.flex-direction-row {
+  flex-direction: row;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.mx-auto {
+  margin-inline: auto;
+}

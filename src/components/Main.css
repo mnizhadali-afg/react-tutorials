@@ -1,0 +1,10 @@
+section {
+  min-height: 80vh;
+  padding: 1.5rem;
+}
+section:nth-child(1) {
+  background-color: rgba(102, 51, 153, 0.331);
+}
+section:nth-child(2) {
+  background-color: rgba(255, 0, 0, 0.04);
+}
