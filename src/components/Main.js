@@ -1,14 +1,16 @@
 import Button from "./Button"
+import Projects from "./Projects.jsx"
 import "./Main.css"
 
 const Main = () => {
   return (
     <main>
-      <section>
-        <div>About</div>
-      </section>
+      <Projects />
       <section>
         <div>Skills</div>
+      </section>
+      <section>
+        <div>About</div>
       </section>
     </main>
   )

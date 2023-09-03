@@ -7,6 +7,9 @@
 .flex-direction-column {
   flex-direction: column;
 }
+.gap-1 {
+  gap: 1em;
+}
 .mx-auto {
   margin-inline: auto;
 }

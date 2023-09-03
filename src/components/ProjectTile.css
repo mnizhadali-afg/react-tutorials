@@ -1,0 +1,13 @@
+.proejctTile {
+  margin-bottom: 2em;
+}
+
+.projectDetails {
+  text-align: right;
+}
+.projectDetails > * {
+  margin-block: 1.5em;
+}
+.projectDetails p {
+  width: 50ch;
+}

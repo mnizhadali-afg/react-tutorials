@@ -1,8 +1,11 @@
 import React from "react"
+import Input from "./Input.jsx"
+import Label from "./Label.jsx"
+import Button from "../Button.js"
 import "./Contact.css"
 
-function Contact() {
-  function handleSubmit(e) {
+const Contact = () => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     let form = e.target
     let formData = new FormData(form)
@@ -13,44 +16,35 @@ function Contact() {
     form.reset()
   }
   return (
-    <section>
+    <section className="contact">
       <h1>
         Contact <span>Me</span>
       </h1>
       <br />
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="" className="form-label">
-            Name
-          </label>
-          <input
+          <Label htmlFor="" className="form-label" value="Name" />
+          <Input
             type="text"
             className="form-control"
             name="name"
-            id=""
-            aria-describedby="helpId"
             placeholder="Razia"
-            required
+            required={true}
           />
         </div>
         <div>
-          <label htmlFor="" className="form-label">
-            Email
-          </label>
-          <input
+          <Label htmlFor="" className="form-label" value="Email" />
+          <Input
             type="email"
-            className="form-control "
+            className="form-control"
             name="email"
-            id=""
-            aria-describedby="emailHelpId"
-            placeholder="abc@mail.com"
-            required
+            placeholder="name@domain.com"
+            required={true}
           />
         </div>
         <div>
-          <label htmlFor="" className="form-label">
-            Message
-          </label>
+          <Label htmlFor="" className="form-label" value="Message" />
+
           <textarea
             className="form-control"
             name="text"
@@ -61,10 +55,8 @@ function Contact() {
           ></textarea>
         </div>
 
-        <div class="btn">
-          <button type="submit" className="pointer">
-            Submit
-          </button>
+        <div className="btnContainer">
+          <Button type="submit" className="pointer" value="Submit" />
         </div>
       </form>
     </section>

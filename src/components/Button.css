@@ -5,3 +5,15 @@ button {
   outline: none;
   border: none;
 }
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+.btnContainer button {
+  background-color: rgb(186, 186, 214);
+}
+.btnContainer button:hover {
+  background-color: rgb(3, 3, 87);
+  color: #ccc;
+}

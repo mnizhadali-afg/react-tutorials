@@ -1,4 +1,4 @@
-section {
+.contact {
   min-height: 100vh;
   max-height: auto;
   display: flex;
@@ -22,15 +22,4 @@ textarea {
 }
 form {
   width: 40%;
-}
-.btn {
-  display: flex;
-  justify-content: center;
-}
-.btn button {
-  background-color: rgb(186, 186, 214);
-}
-.btn button:hover {
-  background-color: rgb(3, 3, 87);
-  color: #ccc;
 }
