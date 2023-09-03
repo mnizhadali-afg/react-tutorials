@@ -8,9 +8,9 @@ const Header = () => {
         alt=""
       />
       <ul className="flex">
-        <li>Skills</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li className="pointer">Skills</li>
+        <li className="pointer">About</li>
+        <li className="pointer">Contact</li>
       </ul>
     </nav>
   )

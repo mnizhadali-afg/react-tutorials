@@ -10,3 +10,6 @@
 .mx-auto {
   margin-inline: auto;
 }
+.pointer {
+  cursor: pointer;
+}
