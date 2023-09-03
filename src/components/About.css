@@ -1,0 +1,18 @@
+.userDetails {
+  text-align: center;
+}
+.userDetails img {
+  border-radius: 50%;
+  border: 3px dashed rgb(75, 121, 238);
+  padding: 3px;
+  margin-bottom: 2em;
+}
+.userDetails h2 {
+  font-size: 32px;
+}
+.userDetails h3 {
+  font-size: 96px;
+}
+.userDetails p {
+  font-style: italic;
+}

@@ -1,0 +1,20 @@
+import "./About.css"
+
+const About = () => {
+  return (
+    <section className="about flex items-center" id="about">
+      <div className="container">
+        <div className="userDetails flex flex-direction-column items-center justify-center">
+          <img
+            src="https://avatars.githubusercontent.com/u/66347282?v=4"
+            alt="https://avatars.githubusercontent.com/u/66347282?v=4"
+          />
+          <h2>Hi 👋</h2>
+          <h3>I'm Razia</h3>
+          <p>A Frontend Developer in Kabul</p>
+        </div>
+      </div>
+    </section>
+  )
+}
+export default About

@@ -1,19 +1,35 @@
 nav {
-  background-color: lightgreen;
-  padding: 1.5rem;
-  align-items: center;
+  background-color: rgb(255, 253, 201);
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 nav img {
   width: 100%;
   max-width: 50px;
   border-radius: 50%;
   margin-right: auto;
-  border: 1px solid green;
-  padding: 3px;
+  border: 1px solid rgb(255, 213, 5);
+  background-color: white;
+  padding: 5px;
 }
 ul {
   gap: 1.5rem;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+a {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 1);
 }

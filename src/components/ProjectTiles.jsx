@@ -2,7 +2,7 @@ import "./ProjectTile.css"
 
 const ProjectTiles = ({ title, description, imgUrl }) => {
   return (
-    <div className="flex gap-1 proejctTile">
+    <div className="flex proejctTile">
       <div className="projectDetails">
         <h3>{title}</h3>
         <p>{description}</p>

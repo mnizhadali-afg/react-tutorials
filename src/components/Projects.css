@@ -1,3 +1,6 @@
-.temp {
-  gap: 1rem;
+#projects h1 {
+  font-size: 32px;
+  margin-bottom: 1em;
+}
+.projects {
 }

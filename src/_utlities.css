@@ -1,3 +1,7 @@
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
 .flex {
   display: flex;
 }
@@ -7,8 +11,20 @@
 .flex-direction-column {
   flex-direction: column;
 }
-.gap-1 {
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-1x {
   gap: 1em;
+}
+.gap-2x {
+  gap: 3em;
+}
+.gap-3x {
+  gap: 6em;
 }
 .mx-auto {
   margin-inline: auto;
