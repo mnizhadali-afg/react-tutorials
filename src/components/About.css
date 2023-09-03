@@ -1,12 +1,36 @@
 .userDetails {
   text-align: center;
 }
-.userDetails img {
-  border-radius: 50%;
-  border: 3px dashed rgb(75, 121, 238);
-  padding: 3px;
-  margin-bottom: 2em;
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3em;
 }
+.userDetails img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  padding: 10px;
+}
+.rotating-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #007bff; /* Border color and size */
+  border-radius: 50%; /* Makes it a circular border */
+  animation: rotateBorder 320s linear infinite; /* Adjust duration and timing function as needed */
+}
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .userDetails h2 {
   font-size: 32px;
 }
