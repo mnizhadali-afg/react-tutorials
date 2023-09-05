@@ -7,7 +7,7 @@
 }
 .projectDetails {
   width: 50%;
-  padding: 3em 5em;
+  padding: 3em 5%;
 }
 .projectDetails > * {
   margin-block: 1.5em;
@@ -16,7 +16,7 @@
   width: 50%;
 }
 .projectDetails p {
-  width: 50ch;
+  /* width: 50ch; */
 }
 .projectThumbnail img {
   text-align: left;
