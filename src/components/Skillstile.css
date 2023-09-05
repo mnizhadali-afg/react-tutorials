@@ -1,0 +1,12 @@
+.icon {
+  font-size: 40px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 3rem;
+  width: 30%;
+}
+.title {
+  font-weight: bold;
+}

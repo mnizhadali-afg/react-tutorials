@@ -15,9 +15,9 @@
 .projectThumbnail {
   width: 50%;
 }
-.projectDetails p {
-  /* width: 50ch; */
-}
+/* .projectDetails p {
+  width: 50ch;
+} */
 .projectThumbnail img {
   text-align: left;
 }

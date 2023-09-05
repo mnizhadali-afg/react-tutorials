@@ -36,3 +36,6 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+.center {
+  text-align: center;
+}
