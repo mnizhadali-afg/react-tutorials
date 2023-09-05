@@ -7,7 +7,7 @@ function Skillstile({ icon, title, description }) {
     <div className="flex flex-direction-column justify-center items-center card ">
       <div className="icon">{icon}</div>
       <p className="title">{title}</p>
-      <p className="description">{description}</p>
+      <p className="description center">{description}</p>
     </div>
   )
 }
