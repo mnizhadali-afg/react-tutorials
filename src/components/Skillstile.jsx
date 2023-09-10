@@ -1,5 +1,4 @@
 import React from "react"
-// import "/Skillstile.css"
 import "./SkillsTile.css"
 
 function SkillsTile({ icon, title, description }) {
