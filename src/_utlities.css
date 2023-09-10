@@ -1,6 +1,5 @@
 .container {
-  width: 100%;
-  /* width: 1280px; */
+  width: clamp(300px, 80%, 1280px);
   margin: 0 auto;
 }
 .flex {
@@ -36,6 +35,11 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
-.center {
+.text-center {
   text-align: center;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }

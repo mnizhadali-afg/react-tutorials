@@ -1,5 +1,5 @@
 import "./Skills.css"
-import Skillstile from "./Skillstile"
+import SkillsTile from "./SkillsTile"
 let data = [
   {
     icon: "😎",
@@ -41,24 +41,20 @@ let data = [
 
 const Skills = () => {
   return (
-    <section className="skills" id="skills">
-      <div className="container">
-        <div className="flex justify-center flex-direction-column">
-          <h1 className="center skill">My Skills</h1>
-          <p className="center">
-            <i>I do All Kinds of Neat Stuff</i>
-          </p>
-          <br /> <br />
-          <div className="skillset flex gap-1x items-center justify-center flex-wrap">
-            {data.map((item) => (
-              <Skillstile
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
-              />
-            ))}
-          </div>
-        </div>
+    <section className="container" id="skills">
+      <h1 className="text-center">My Skills</h1>
+      <p className="text-center">
+        <i>I do All Kinds of Neat Stuff</i>
+      </p>
+
+      <div className="skillContainer">
+        {data.map((item) => (
+          <SkillsTile
+            icon={item.icon}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
       </div>
     </section>
   )

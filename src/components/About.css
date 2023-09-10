@@ -34,12 +34,12 @@
 .userDetails h2 {
   font-size: 32px;
 }
-.userDetails h3 {
+.userDetails h1 {
   font-size: 96px;
 }
 .userDetails p {
   font-style: italic;
 }
 span {
-  color: rgb(247, 240, 61);
+  color: #e06043;
 }

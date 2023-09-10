@@ -13,9 +13,9 @@ const About = () => {
             />
           </div>
           <h2>Hi 👋</h2>
-          <h3>
+          <h1>
             I'm <span>Frozan</span>
-          </h3>
+          </h1>
           <p>A Frontend Developer in Kabul</p>
         </div>
       </div>

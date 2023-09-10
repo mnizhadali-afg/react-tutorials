@@ -1,4 +1,5 @@
 import "./ProjectTile.css"
+import { FiChevronsRight } from "react-icons/fi"
 
 const ProjectTiles = ({ title, description, imgUrl }) => {
   return (
@@ -6,7 +7,10 @@ const ProjectTiles = ({ title, description, imgUrl }) => {
       <div className="projectDetails">
         <h3>{title}</h3>
         <p>{description}</p>
-        <a href="#">View Project</a>
+        <div className="link">
+          <a href="#">View Project</a>
+          <FiChevronsRight />
+        </div>
       </div>
       <div className="projectThumbnail">
         <img src={imgUrl} alt={title} />

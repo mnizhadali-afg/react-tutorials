@@ -20,4 +20,6 @@
 } */
 .projectThumbnail img {
   text-align: left;
+  height: 100%;
+  object-fit: cover;
 }
