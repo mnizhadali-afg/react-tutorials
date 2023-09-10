@@ -14,7 +14,7 @@ const About = () => {
           </div>
           <h2>Hi 👋</h2>
           <h3>
-            I'm <span>Razia</span>
+            I'm <span>Frozan</span>
           </h3>
           <p>A Frontend Developer in Kabul</p>
         </div>
