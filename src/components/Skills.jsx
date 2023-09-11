@@ -43,8 +43,9 @@ const Skills = () => {
   return (
     <section className="container" id="skills">
       <div className="skillContainer">
-        {data.map((item) => (
+        {data.map((item, index) => (
           <SkillsTile
+            key={index}
             icon={item.icon}
             title={item.title}
             description={item.description}
