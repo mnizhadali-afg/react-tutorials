@@ -4,17 +4,17 @@
   gap: 1em;
 }
 
-/* @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .skillContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .skillContainer {
     grid-template-columns: 1fr;
   }
-} */
+}
 
 .skill {
   font-size: 32px;

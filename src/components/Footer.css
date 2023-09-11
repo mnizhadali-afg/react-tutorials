@@ -3,3 +3,10 @@ footer {
   background-color: rgb(4, 3, 19);
   color: white;
 }
+
+.icons > *:hover {
+  cursor: pointer;
+}
+.icons {
+  margin-bottom: 1rem;
+}

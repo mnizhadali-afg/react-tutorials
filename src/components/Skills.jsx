@@ -42,11 +42,6 @@ let data = [
 const Skills = () => {
   return (
     <section className="container" id="skills">
-      <h1 className="text-center">My Skills</h1>
-      <p className="text-center">
-        <i>I do All Kinds of Neat Stuff</i>
-      </p>
-
       <div className="skillContainer">
         {data.map((item) => (
           <SkillsTile
