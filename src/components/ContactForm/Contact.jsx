@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Input from "./Input.jsx"
 import Label from "./Label.jsx"
 import Button from "../Button.jsx"
@@ -13,11 +13,13 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData((prevData) => ({ ...prevData, [name]: value }))
-    // console.log(formData)
+    console.log(formData)
   }
   const handleSubmit = (e) => {
     e.preventDefault()
+    alert(formData.name + " Thank you for sending us a message ")
   }
+
   return (
     <section id="contact">
       <div className="container">
