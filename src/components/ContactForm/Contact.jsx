@@ -5,15 +5,9 @@ import Button from "../Button.jsx"
 import "./Contact.css"
 
 const Contact = () => {
+  const handleChange = (e) => {}
   const handleSubmit = (e) => {
     e.preventDefault()
-    let form = e.target
-    let formData = new FormData(form)
-    let data = Object.fromEntries(formData)
-    console.log(data)
-    let name = data.name
-    alert("Thank you " + name + " for submitting the form")
-    form.reset()
   }
   return (
     <section id="contact">
@@ -32,6 +26,7 @@ const Contact = () => {
                 name="name"
                 placeholder="Razia"
                 required={true}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -42,6 +37,7 @@ const Contact = () => {
                 name="email"
                 placeholder="name@domain.com"
                 required={true}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -53,6 +49,7 @@ const Contact = () => {
                 rows="3"
                 placeholder="Your message"
                 required
+                onChange={handleChange}
               ></textarea>
             </div>
             <div className="btnContainer">
