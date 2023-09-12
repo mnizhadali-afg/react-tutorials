@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Input from "./Input.jsx"
 import Label from "./Label.jsx"
 import Button from "../Button.jsx"
@@ -13,7 +13,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData((prevData) => ({ ...prevData, [name]: value }))
-    console.log(formData)
+    // console.log(formData)
   }
   const handleSubmit = (e) => {
     e.preventDefault()
