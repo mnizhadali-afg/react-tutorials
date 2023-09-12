@@ -1,14 +1,22 @@
-import React from "react"
+import React, {useState} from "react"
 import Input from "./Input.jsx"
 import Label from "./Label.jsx"
 import Button from "../Button.jsx"
 import "./Contact.css"
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name :"",
+    email :"",
+    message: ""
+  })
   const handleChange = (e) => {}
   const handleSubmit = (e) => {
     e.preventDefault()
-  }
+    alert(formData.name + " Thank you for sending us a message ")
+  } 
+  
+  
   return (
     <section id="contact">
       <div className="container">
