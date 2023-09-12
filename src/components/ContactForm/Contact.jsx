@@ -1,15 +1,10 @@
-import React, {useState} from "react"
+import React from "react"
 import Input from "./Input.jsx"
 import Label from "./Label.jsx"
 import Button from "../Button.jsx"
 import "./Contact.css"
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name :"",
-    email :"",
-    message: ""
-  })
   const handleChange = (e) => {}
   const handleSubmit = (e) => {
     e.preventDefault()
