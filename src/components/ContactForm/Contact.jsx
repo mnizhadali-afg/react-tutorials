@@ -1,11 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import Input from "./Input.jsx"
 import Label from "./Label.jsx"
 import Button from "../Button.jsx"
 import "./Contact.css"
 
 const Contact = () => {
-  const handleChange = (e) => {}
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    text: "",
+  })
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData((prevData) => ({ ...prevData, [name]: value }))
+    console.log(formData)
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
   }
