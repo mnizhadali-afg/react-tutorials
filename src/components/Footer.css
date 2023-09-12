@@ -6,7 +6,23 @@ footer {
 
 .icons > *:hover {
   cursor: pointer;
+  color: aliceblue;
 }
-.icons {
+.icons > * {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: larger;
+}
+footer p {
+  margin-bottom: 1rem;
+}
+footer img {
+  width: 50px;
+
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid rgb(255, 213, 5);
+  background-color: white;
+  padding: 5px;
   margin-bottom: 1rem;
 }

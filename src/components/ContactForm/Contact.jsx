@@ -12,13 +12,13 @@ const Contact = () => {
     let data = Object.fromEntries(formData)
     console.log(data)
     let name = data.name
-    alert("Thank you" + " " + name + " for submitting the form")
+    alert("Thank you " + name + " for submitting the form")
     form.reset()
   }
   return (
     <section id="contact">
       <div className="container">
-        <div className="contact">
+        <div className="contact flex justify-center flex-direction-column">
           <h1>
             Contact <span>Me</span>
           </h1>
