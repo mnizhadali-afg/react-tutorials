@@ -1,45 +1,51 @@
-import ProjectTiles from "./ProjectTiles"
+import { useEffect, useState } from "react"
+import MultiActionAreaCard from "./ProjectTiles"
+import image from "./assets/Frozan.jpeg"
 
 import "./Projects.css"
-
-const data = [
-  {
-    title: "Something Special",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum, excepturi, placeat, repellendus quidem quis at in libero eveniet tempore odio. Sapiente nihil molestias, est voluptatibus",
-    imgUrl:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-  },
-  {
-    title: "Something Special",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum, excepturi, placeat, repellendus quidem quis at in libero eveniet tempore odio. Sapiente nihil molestias, est voluptatibus",
-    imgUrl:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-  },
-  {
-    title: "Something Special",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum, excepturi, placeat, repellendus quidem quis at in libero eveniet tempore odio. Sapiente nihil molestias, est voluptatibus",
-    imgUrl:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-  },
-]
+import { CircularProgress } from "@mui/material"
 
 const Projects = () => {
-  let projects = data.map((project, index) => (
-    <ProjectTiles
-      title={project.title}
-      description={project.description}
-      imgUrl={project.imgUrl}
-      key={index}
-    />
-  ))
+  const [repos, setRepos] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+  useEffect(() => {
+    fetch(`https://api.github.com/users/akbarirazia/repos`)
+      .then((response) => response.json())
+      .then((data) => {
+        const filteredRepos = data.filter((item) => item.homepage)
+        setRepos(filteredRepos)
+        setLoading(false)
+      })
+      .catch((err) => {
+        setError(err)
+        setLoading(false)
+      })
+  }, [])
+
+  if (loading) {
+    return <CircularProgress />
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>
+  }
+
   return (
     <section id="projects">
-      <div className="container">
+      <div className="container fade-in">
         <h1 className="center">Projects</h1>
-        <div className="projects">{projects}</div>
+        <div className="projects">
+          {repos.map((repo) => (
+            <MultiActionAreaCard
+              link={repo.homepage}
+              key={repo.id}
+              title={repo.name}
+              description={repo.description}
+              image={repo.owner.avatar_url}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )

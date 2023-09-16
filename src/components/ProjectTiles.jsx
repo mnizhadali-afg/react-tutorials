@@ -1,21 +1,53 @@
-import "./ProjectTile.css"
-import { FiChevronsRight } from "react-icons/fi"
+import * as React from "react"
+import Card from "@mui/material/Card"
+import CardContent from "@mui/material/CardContent"
+import CardMedia from "@mui/material/CardMedia"
+import Typography from "@mui/material/Typography"
+import { Button, CardActionArea, CardActions } from "@mui/material"
+import Anchor from "./Anchor"
 
-const ProjectTiles = ({ title, description, imgUrl }) => {
+export default function MultiActionAreaCard({
+  image,
+  title,
+  description,
+  link,
+}) {
+  title = title.replace(/-/g, " ")
+
   return (
-    <div className="flex proejctTile flex-wrap">
-      <div className="projectDetails">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <div className="link">
-          <a href="#">View Project</a>
-          <FiChevronsRight />
-        </div>
-      </div>
-      <div className="projectThumbnail">
-        <img src={imgUrl} alt={title} />
-      </div>
-    </div>
+    <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image={image}
+          // alt="green iguana"
+        />
+        <CardContent>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            className="Typography"
+          >
+            {title}
+          </Typography>
+          <Typography
+            color="text.secondary"
+            className="Typography"
+            variant="h10"
+          >
+            {description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Anchor target={link}>
+          <Button size="small" color="primary">
+            View Poject
+          </Button>
+        </Anchor>
+      </CardActions>
+    </Card>
   )
 }
-export default ProjectTiles
