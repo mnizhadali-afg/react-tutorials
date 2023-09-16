@@ -1,25 +1,19 @@
+import Anchor from "./Anchor"
 import "./Header.css"
 
 const Header = () => {
   return (
     <nav>
-      <div className="container flex items-center">
-        <img
-          src="https://avatars.githubusercontent.com/u/66347282?v=4"
-          alt=""
-        />
-        <ul className="flex">
+      <div className="container flex items-center justify-end">
+        <ul className="flex ">
           <li>
-            <a href="#about">About</a>
+            <Anchor href="#about">ABOUT</Anchor>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <Anchor href="#about">SERVICES</Anchor>
           </li>
           <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+            <Anchor href="#about">CONTACT</Anchor>
           </li>
         </ul>
       </div>

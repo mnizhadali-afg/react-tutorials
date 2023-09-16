@@ -50,3 +50,12 @@
 .justify-between {
   justify-content: space-between;
 }
+.justify-end {
+  justify-content: end;
+}
+.text-right {
+  text-align: right;
+}
+.grid {
+  display: grid;
+}
