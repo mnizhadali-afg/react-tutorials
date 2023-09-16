@@ -2,11 +2,15 @@ import React, { useState } from "react"
 import Input from "./Input.jsx"
 import Label from "./Label.jsx"
 import Button from "../Button.jsx"
+import {TfiEmail} from "react-icons/tfi"
+import {BsTelephone} from "react-icons/bs"
+import {MdOutlineDownload} from "react-icons/md"
+
+
 import "./Contact.css"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
     email: "",
     text: "",
   })
@@ -21,38 +25,46 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact">
-      <div className="container">
-        <div className="contact flex justify-center flex-direction-column">
-          <h1>
-            Contact <span>Me</span>
-          </h1>
+    <artical id="contact">
+
+    <div className="container flex flex-direction-row justify-between">
+      <div>
+        <div> 
+          <h3 className="contacts">
+            Contact Me
+          </h3>
+          <div className="flex gap-1x justify-baseline"><TfiEmail />
+            <p><a href="#" className="anker"></a>frozanziaie234@gmail.com</p>
+          </div>
+          <div className="flex gap-1x justify-baseline">
+            <BsTelephone />
+            <p><a href="#"></a>+93 749 501 154</p>
+          </div>
+          <div className="btnContainer">
+          <Button type= "file" className="pointer flex " value={<span className="flex justify-baseline"><span>Resume</span> <MdOutlineDownload /></span>} />
+        
+          </div>
+        </div>
+      </div>
+      
+     
+        <div className="contact ">
+        
           <br />
           <form onSubmit={handleSubmit}>
             <div>
-              <Label htmlFor="" className="form-label" value="Name" />
-              <Input
-                type="text"
-                className="form-control"
-                name="name"
-                placeholder="Razia"
-                required={true}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <Label htmlFor="" className="form-label" value="Email" />
+             
               <Input
                 type="email"
                 className="form-control"
                 name="email"
-                placeholder="name@domain.com"
+                placeholder="Your email"
                 required={true}
                 onChange={handleChange}
               />
             </div>
             <div>
-              <Label htmlFor="" className="form-label" value="Message" />
+            
               <textarea
                 className="form-control"
                 name="text"
@@ -69,7 +81,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </artical>
   )
 }
 

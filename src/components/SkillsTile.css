@@ -1,10 +1,9 @@
 .icon {
-  font-size: 40px;
+  font-size: 60px;
 }
 .card {
-  padding: 1.5rem;
-  border: 1px solid rgba(0, 123, 255, 0.5);
-  border-radius: 15px;
+  padding: 1rem;
+
 }
 .card > * {
   margin-block: 1em;

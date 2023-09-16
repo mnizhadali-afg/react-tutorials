@@ -59,3 +59,6 @@
 .grid {
   display: grid;
 }
+.justify-baseline{
+  justify-content: baseline;
+}

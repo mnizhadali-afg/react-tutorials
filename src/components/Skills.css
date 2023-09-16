@@ -1,12 +1,13 @@
 .skillContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
+  grid-template-columns: repeat(6, 1fr);
+  
 }
 
 @media screen and (max-width: 750px) {
   .skillContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    
   }
 }
 
@@ -18,4 +19,5 @@
 
 .skill {
   font-size: 32px;
+  
 }
