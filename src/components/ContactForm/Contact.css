@@ -21,3 +21,13 @@ form {
 .contacts {
   font-size: 32px;
 }
+@media Screen and (max-width: 767px){
+  .container{
+    min-width: 70%;
+    font-size: 60%;
+    gap: 20%;
+  }
+ .contacts{
+  font-size: 1rem
+ }
+}

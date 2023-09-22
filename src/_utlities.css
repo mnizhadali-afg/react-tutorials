@@ -62,3 +62,6 @@
 .justify-baseline{
   justify-content: baseline;
 }
+.justify-content{
+  justify-content: center;
+}

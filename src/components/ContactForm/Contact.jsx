@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Input from "./Input.jsx"
-import Label from "./Label.jsx"
+//import Label from "./Label.jsx"
 import Button from "../Button.jsx"
 import { TfiEmail } from "react-icons/tfi"
 import { BsTelephone } from "react-icons/bs"
@@ -32,13 +32,13 @@ const Contact = () => {
             <div className="flex gap-1x justify-baseline">
               <TfiEmail />
               <p>
-                <a href="#" className="anker"></a>frozanziaie234@gmail.com
+              <div> frozanziaie234@gmail.com</div>
               </p>
             </div>
             <div className="flex gap-1x justify-baseline">
               <BsTelephone />
               <p>
-                <a href="#"></a>+93 749 501 154
+                <div> +93 749 501 154</div>
               </p>
             </div>
             <div className="btnContainer">

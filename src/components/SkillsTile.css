@@ -1,5 +1,6 @@
 .icon {
   font-size: 60px;
+  
 }
 .card {
   padding: 1rem;
@@ -10,4 +11,12 @@
 }
 .title {
   font-weight: bold;
+}
+@media Screen and (max-width: 600px){
+  .card{
+    min-width:60%
+  }
+  .title {
+    font-size: 40%;
+  }
 }

@@ -4,7 +4,7 @@ import "./SkillsTile.css"
 
 function SkillsTile({ icon, title }) {
   return (
-    <div className="card text-center">
+    <div className="card flex flex-direction-column justify-between justify-content ">
       <div className="icon">{icon}</div>
 
       <p className="title">{title}</p>
