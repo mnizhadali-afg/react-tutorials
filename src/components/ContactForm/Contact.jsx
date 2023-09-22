@@ -27,7 +27,7 @@ const Contact = () => {
     <article id="contact">
       <div className="container flex flex-direction-row justify-between">
         <div>
-          <div>
+          <div className="contact">
             <h3 className="contacts">Contact Me</h3>
             <div className="flex gap-1x justify-baseline">
               <TfiEmail />
@@ -41,7 +41,7 @@ const Contact = () => {
                 <div> +93 749 501 154</div>
               </p>
             </div>
-            <div className="btnContainer">
+            <div className="btnContainer btn">
               <Button
                 type="file"
                 className="pointer flex "

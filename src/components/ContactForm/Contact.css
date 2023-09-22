@@ -31,3 +31,6 @@ form {
   font-size: 1rem
  }
 }
+.btnContainer{
+  float: right;
+}
