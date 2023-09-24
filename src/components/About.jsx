@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className="about grid place-center">
           <p className="text-right hello-text">Hello, I'm</p>
-          <h1>Frozan Ziaee</h1>
+          <h1>Frozan <br /><span className="lastName">Ziaee</span></h1>
           <p>
             Frontend web developer based in Parwan, Afghanistan. I am passionate
             about learning and willing to improve myself to the last point in
@@ -23,9 +23,12 @@ const About = () => {
             Consequatur harum aliquid hic placeat quod quidem, amet error.
           </p>
           <br />
-          <Button type="button" className="pointer " value="Get in touch" />
+          <div className="btnContainer">
+          <Button type="button" className="btn pointer " value="Get in touch" />
+          </div>
+          
           <br />
-          <div className="flex gap-1x icons justify-center">
+          <div className="flex gap-1x icons ">
             <Anchor target="_blank">
               <BsFacebook />
             </Anchor>

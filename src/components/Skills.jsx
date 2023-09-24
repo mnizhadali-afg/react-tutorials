@@ -53,6 +53,8 @@ const Skills = () => {
         ))}
       </div>
     </article>
+    
+
   )
 }
 export default Skills

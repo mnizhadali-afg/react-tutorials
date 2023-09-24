@@ -27,21 +27,20 @@ const Contact = () => {
     <article id="contact">
       <div className="container flex flex-direction-row justify-between">
         <div>
-          <div className="contact">
             <h3 className="contacts">Contact Me</h3>
             <div className="flex gap-1x justify-baseline">
               <TfiEmail />
-              <p>
+              <p className="myContact">
               <div> frozanziaie234@gmail.com</div>
               </p>
             </div>
             <div className="flex gap-1x justify-baseline">
               <BsTelephone />
-              <p>
+              <p className="myContact">
                 <div> +93 749 501 154</div>
               </p>
             </div>
-            <div className="btnContainer btn">
+            <div className="btnContainer">
               <Button
                 type="file"
                 className="pointer flex "
@@ -52,7 +51,6 @@ const Contact = () => {
                 }
               />
             </div>
-          </div>
         </div>
 
         <div className="contact ">
@@ -79,8 +77,11 @@ const Contact = () => {
                 onChange={handleChange}
               ></textarea>
             </div>
-            <div className="btnContainer">
-              <Button type="submit" className="pointer" value="Submit" />
+            <div className="btnContainer submit">
+              <Button
+               type="submit"
+               className="pointer flex" 
+               value="Submit" />
             </div>
           </form>
         </div>

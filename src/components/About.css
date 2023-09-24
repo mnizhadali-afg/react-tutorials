@@ -11,6 +11,10 @@ h1 {
   font-size: 5rem;
   text-align: center;
 }
+.lastName{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4rem;
+}
 
 .about {
   text-align: justify;
@@ -64,4 +68,12 @@ h1 {
   color: black !important;
   font-size: larger;
   /* background-color: black; */
+}
+.icons{
+ justify-content: end;
+ text-align: end;
+}
+.btn{
+  justify-content: start;
+  text-align: start;
 }

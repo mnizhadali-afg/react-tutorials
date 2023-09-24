@@ -14,6 +14,7 @@ textarea {
   padding: 3%;
   border-radius: 5px;
   border: solid 1px #ccc;
+  background-color: rgb(182, 178, 178);
 }
 form {
   width: 100%;
@@ -31,6 +32,9 @@ form {
   font-size: 1rem
  }
 }
-.btnContainer{
+.myContact{
+  color: rgb(184, 180, 180);
+}
+.submit{
   float: right;
 }
