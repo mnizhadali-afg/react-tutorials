@@ -41,7 +41,7 @@ let data = [
 
 const Skills = () => {
   return (
-    <article className="container" id="skills">
+    <section className="container" id="skills">
     <h3 className="skill">Skills</h3>
       <div className="skillContainer">
         {data.map((item, index) => (
@@ -52,7 +52,7 @@ const Skills = () => {
           />
         ))}
       </div>
-    </article>
+    </section>
     
 
   )

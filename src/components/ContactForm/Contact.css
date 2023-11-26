@@ -17,23 +17,25 @@ textarea {
   background-color: rgb(182, 178, 178);
 }
 form {
-  width: 100%;
+  width: 60vh;
 }
 .contacts {
-  font-size: 32px;
+  font-size: 34px;
 }
 @media Screen and (max-width: 767px){
   .container{
-    min-width: 70%;
-    font-size: 60%;
-    gap: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
  .contacts{
-  font-size: 1rem
+  font-size: 2rem
  }
 }
 .myContact{
   color: rgb(184, 180, 180);
+  font-size: 1.5rem;
 }
 .submit{
   float: right;

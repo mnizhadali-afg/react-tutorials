@@ -4,21 +4,24 @@
   grid-template-columns: repeat(6, 1fr);
   
 }
-
 @media screen and (max-width: 768px) {
   .skillContainer {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   .skillContainer {
-    grid-template-columns: 2fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
   }
 }
 
 .skill {
-  font-size: 32px;
+  font-size: 34px;
   
 }

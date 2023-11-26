@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <article id="contact">
+    <section id="contact">
       <div className="container flex flex-direction-row justify-between">
         <div>
             <h3 className="contacts">Contact Me</h3>
@@ -86,7 +86,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </article>
+    </section>
   )
 }
 

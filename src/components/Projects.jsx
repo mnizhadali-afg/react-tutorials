@@ -42,7 +42,7 @@ const Projects = () => {
               key={repo.id}
               title={repo.name}
               description={repo.description}
-              image={repo.owner}
+              image={repo.owner.avatar_url}
             />
           ))}
         </div>

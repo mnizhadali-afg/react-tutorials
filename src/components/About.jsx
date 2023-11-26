@@ -19,8 +19,7 @@ const About = () => {
           <p>
             Frontend web developer based in Parwan, Afghanistan. I am passionate
             about learning and willing to improve myself to the last point in
-            this field. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur harum aliquid hic placeat quod quidem, amet error.
+            this field. 
           </p>
           <br />
           <div className="btnContainer">
