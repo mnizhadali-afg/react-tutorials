@@ -8,14 +8,11 @@ button {
 
 .btnContainer {
   display: flex;
-
-
 }
 .btnContainer button {
   background-color: rgb(118, 118, 122);
-  color:#fff;
+  color: #fff;
 }
 .btnContainer button:hover {
   background-color: #c5c0c0;
 }
-

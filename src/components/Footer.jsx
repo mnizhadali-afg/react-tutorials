@@ -4,8 +4,8 @@ import Contact from "./ContactForm/Contact.jsx"
 const Footer = () => {
   return (
     <footer>
-      <div >
-       <Contact />
+      <div className="container">
+        <Contact />
       </div>
     </footer>
   )

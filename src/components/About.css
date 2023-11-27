@@ -5,47 +5,43 @@
 .image-container img {
   border-radius: 50%;
   padding: 10px;
+  width: 400px;
+}
+.image-about-contain {
+  display: flex;
 }
 h1 {
   font-family: "Great Vibes", cursive;
   font-size: 5rem;
   text-align: center;
 }
-.lastName{
-  font-family: 'Courier New', Courier, monospace;
+.lastName {
+  font-family: "Courier New", Courier, monospace;
   font-size: 4rem;
 }
 
 .about {
   text-align: justify;
+  width: 50%;
 }
 .hello-text {
   font-size: xx-large;
 }
-@media screen and (max-width: 767px) {
-  .image-container img {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .about {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
 
-@media screen and (min-width: 768px) {
+@media (max-width: 768px) {
   .image-container {
     width: 50%;
   }
   .about {
-    width: 40%;
+    width: 80%;
   }
   .image-container img {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
   .image-about-contain {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -69,11 +65,11 @@ h1 {
   font-size: larger;
   /* background-color: black; */
 }
-.icons{
- justify-content: end;
- text-align: end;
+.icons {
+  justify-content: end;
+  text-align: end;
 }
-.btn{
+.btn {
   justify-content: start;
   text-align: start;
 }

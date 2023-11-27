@@ -14,7 +14,7 @@ const Projects = () => {
       .then((response) => response.json())
       .then((data) => {
         const filteredRepos = data
-       setRepos(filteredRepos)
+        setRepos(filteredRepos)
         setLoading(false)
       })
       .catch((err) => {
@@ -32,8 +32,8 @@ const Projects = () => {
   }
 
   return (
-    <section id="projects">
-      <div className="container fade-in">
+    <section id="projects " className="container fade-in">
+      <div className="">
         <h2 className="center">Projects</h2>
         <div className="projects">
           {repos.map((repo) => (

@@ -1,6 +1,12 @@
 .container {
-  width: clamp(300px, 80%, 1280px);
+  width: 80%;
   margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+  .container {
+    width: 95%;
+  }
 }
 .flex {
   display: flex;
@@ -59,9 +65,9 @@
 .grid {
   display: grid;
 }
-.justify-baseline{
+.justify-baseline {
   justify-content: baseline;
 }
-.justify-content{
+.justify-content {
   justify-content: center;
 }

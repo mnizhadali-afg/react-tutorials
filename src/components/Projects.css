@@ -1,6 +1,6 @@
 #projects h2 {
   font-size: 32px;
-  margin-block : 1em;
+  margin-block: 1em;
 }
 #projects {
   background-color: #fffcf6;
@@ -15,13 +15,13 @@
   margin: 1rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 240px) {
+/* @media (max-width: 767px) {
   .projects {
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */
